@@ -1,10 +1,16 @@
 import { InferModel } from 'drizzle-orm';
 import { sqliteTable, text } from 'drizzle-orm/sqlite-core';
 
-export const notes = sqliteTable('notes', {
+export const events = sqliteTable('events', {
   id: text('id').primaryKey(),
   title: text('title').notNull(),
-  description: text('description').notNull(),
+  description: text('description'),
 });
 
-export type Note = InferModel<typeof notes>;
+// export const items = sqliteTable('events', {
+//   id: text('id').primaryKey(),
+//   title: text('title').notNull(),
+//   amount: text('description'),
+// });
+
+export type Note = InferModel<typeof events>;

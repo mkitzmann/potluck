@@ -2,7 +2,7 @@ import {db} from '@/db';
 import {FormNotesAdd} from './components/FormNotesAdd';
 
 async function getNotes() {
-	return db.query.notes.findMany();
+	return db.query.events.findMany();
 }
 
 export default async function Home() {
