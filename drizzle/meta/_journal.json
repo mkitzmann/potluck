@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1700930296082,
+      "tag": "0000_demonic_riptide",
+      "breakpoints": true
+    }
+  ]
+}
