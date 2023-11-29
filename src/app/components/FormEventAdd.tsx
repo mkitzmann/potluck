@@ -1,23 +1,24 @@
 'use client';
 import { Button } from "@nextui-org/button";
 import { Input } from "@nextui-org/input";
-import { addNoteAction } from "../actions";
+import { addEventAction } from "../actions";
 import { useRef } from "react";
 
-export function FormNotesAdd() {
+export function FormEventAdd() {
   const formRef = useRef<HTMLFormElement | null>(null);
 
   return (
     <form action={async (formData) => {
       formRef.current?.reset();
-      await addNoteAction(formData);
+      await addEventAction(formData);
     }} className="flex flex-col gap-4" ref={formRef}>
-      <Input type="text" name="title" label="Title" />
+			<h2>Create new event</h2>
+      <Input type="text" name="title" label="Title" required/>
 
       <Input type="text" name="description" label="Description" />
 
       <Button type="submit" color="primary">
-        Add
+        Create Event
       </Button>
     </form>
   );
