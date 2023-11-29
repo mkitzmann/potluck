@@ -1,0 +1,1 @@
+ALTER TABLE `participant` RENAME COLUMN `item_id` TO `participant_item_id`;
