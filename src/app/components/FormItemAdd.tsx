@@ -3,9 +3,9 @@ import {Button} from "@nextui-org/button";
 import {Input} from "@nextui-org/input";
 import {addItemAction} from "../actions";
 import {useRef} from "react";
-import {Events} from "@/db/schema";
+import {Event} from "@/db/schema";
 
-export function FormItemAdd(props: { event: Events }) {
+export function FormItemAdd(props: { event: Event }) {
   const { event } = props;
   const formRef = useRef<HTMLFormElement | null>(null);
   return (
