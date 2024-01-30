@@ -7,6 +7,7 @@ export const event = sqliteTable("event", {
   title: text("title").notNull(),
   description: text("description"),
 });
+
 export const eventRelations = relations(event, ({ many }) => ({
   items: many(item),
 }));

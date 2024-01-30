@@ -17,7 +17,7 @@
     "@nextui-org/input": "^2.0.1",
     "@nextui-org/react": "^2.0.1",
     "better-sqlite3": "^8.4.0",
-    "drizzle-orm": "^0.27.2",
+    "drizzle-orm": "^0.29.3",
     "framer-motion": "^10.16.5",
     "nanoid": "^5.0.3",
     "next": "14.0.3",
